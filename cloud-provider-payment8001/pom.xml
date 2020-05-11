@@ -75,6 +75,9 @@
 
     </dependencies>
 
+    <!--此处为了解决springboot配置文件加载不到的问题-->
+    <!--classpath中，没有src/main/resources这个目录-->
+    <!--https://blog.csdn.net/lovequanquqn/article/details/85017533-->
     <build>
         <resources>
             <resource>
