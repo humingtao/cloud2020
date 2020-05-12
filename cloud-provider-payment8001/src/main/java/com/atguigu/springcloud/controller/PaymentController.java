@@ -28,6 +28,7 @@ public class PaymentController {
      * @return
      */
     @PostMapping(value = "/payment/create")
+    /*@RequestBody 注解payment为实体*/
     public CommonResult create(@RequestBody Payment payment){
         int result = paymentService.create(payment);
         log.info("*****插入结果："+result);
