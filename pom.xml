@@ -90,6 +90,7 @@
     </dependencies>
   </dependencyManagement>
 
+  <!--热部署-->
   <build>
     <plugins>
       <plugin>
