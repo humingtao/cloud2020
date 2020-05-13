@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>cloud2020</artifactId>
+        <groupId>com.atguigu.springcloud</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>cloud-api-commons</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!--首先 Hutool 对自己的定位很清晰，做用户的超级工具，依赖其他类库基本上都是可选的。
+   例如你需要对 Excel、Word 进行处理，那么你项目中势必会依赖 POI ，然后直接使用 Hutool-Poi 减低代码量即可。
+   Hutool 除了对特定内容需要引入可选依赖以外，绝大数都是在 JDK 基础上进行的封装，对项目的污染性降低到了最低，几乎不可见的地步。
+   简洁的调用参数、良好的设计模式、主要功能覆盖全面的测试用例、详尽的中文注释，替代 common-XX 系列基本上是稳稳的。-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.1.0</version>
+        </dependency>
+    </dependencies>
+
+</project>
