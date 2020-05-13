@@ -31,6 +31,7 @@ public class OrderController {
     @GetMapping("/consumer/payment/get/{id}")
     public CommonResult<Payment> getPayment(@PathVariable("id") Long id) {
         log.info("开始查询id为:{}", id);
+        log.info("请求地址为:{}", PAYMENT_URL + "/payment/get/" + id);
         return this.restTemplate.getForObject(PAYMENT_URL + "/payment/get/" + id,CommonResult.class);
     }
 }
